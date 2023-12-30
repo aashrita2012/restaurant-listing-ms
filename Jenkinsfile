@@ -12,7 +12,7 @@ pipeline {
     maven "Maven"
   }
 
-  stages {
+stages {
 
     stage('Maven Build'){
         steps{
@@ -95,5 +95,4 @@ stage('Update Image Tag in GitOps') {
     }
 
   }
-
 }
