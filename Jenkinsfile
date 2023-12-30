@@ -77,8 +77,7 @@ stage('Docker Build and Push') {
     }
 
 
-
-    stage('Update Image Tag in GitOps') {
+stage('Update Image Tag in GitOps') {
       steps {
          checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[ credentialsId: 'git-ssh', url: 'git@github.com:aashrita2012/deployment-folder.git']])
         script {
