@@ -25,9 +25,9 @@ stages {
     }
 
     stage('SonarQube Analysis') {
-  steps {
-    sh 'mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.host.url=http://${JENKINS_SERVER}:9000/ -Dsonar.login=squ_cdefd758e960e50fd24c6aab2ba592eca428aa4e'
-  }
+    steps {
+     sh 'mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.host.url=http://${JENKINS_SERVER}:9000/ -Dsonar.login=squ_cdefd758e960e50fd24c6aab2ba592eca428aa4e'
+   }
 }
 
 stage('Check code coverage') {
