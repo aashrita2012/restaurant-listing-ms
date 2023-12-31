@@ -5,12 +5,10 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('DOCKER_HUB_CREDENTIAL')
     VERSION = "${env.BUILD_ID}"
     JENKINS_SERVER = "54.83.130.8"
-
-  }
-
+              }
   tools {
     maven "Maven"
-  }
+        }
 
 stages {
 
