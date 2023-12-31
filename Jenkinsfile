@@ -32,7 +32,6 @@ stages {
   }
 }
 
-
 stage('Check code coverage') {
             steps {
                 script {
@@ -67,7 +66,6 @@ stage('Docker Build and Push') {
           sh 'docker push veerendra1976/restaurant-listing-service:${VERSION}'
       }
     } 
-
 
      stage('Cleanup Workspace') {
       steps {
