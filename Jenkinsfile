@@ -15,7 +15,6 @@ stages {
         sh 'mvn clean package  -DskipTests'
         }
     }
-
      stage('Run Tests') {
       steps {
         sh 'mvn test'
