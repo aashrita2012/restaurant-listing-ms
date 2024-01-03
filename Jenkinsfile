@@ -62,9 +62,8 @@ stage('Docker Build and Push') {
           sh 'docker build -t veerendra1976/restaurant-listing-service:${VERSION} .'
           sh 'docker push veerendra1976/restaurant-listing-service:${VERSION}'
       }
-    } 
-
-     stage('Cleanup Workspace') {
+    }
+    stage('Cleanup Workspace') {
       steps {
         deleteDir()
        
