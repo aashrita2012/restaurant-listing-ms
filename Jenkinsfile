@@ -3,7 +3,7 @@ pipeline {
   environment {
     DOCKERHUB_CREDENTIALS = credentials('DOCKER_HUB_CREDENTIAL')
     VERSION = "${env.BUILD_ID}"
-    JENKINS_SERVER = "54.174.179.191"
+    JENKINS_SERVER = "34.234.193.133"
               }
   tools {
     maven "Maven"
